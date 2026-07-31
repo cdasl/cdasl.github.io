@@ -1,3 +1,47 @@
-theme: jekyll-theme-minimal
-title: cdasl's homepage
-description: Something boring.
+# 站点基础信息
+title: cdasl's Site
+description: a personal site
+author: cdasl
+url: "https://cdasl.github.io" # 不带结尾斜杠
+baseurl: "" # 子路径，例如 /blog ，根站点留空
+locale: zh-CN
+
+# 构建配置
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 10        # 每页文章数量
+paginate_path: "/page/:num/"
+
+# 时区
+timezone: Asia/Shanghai
+
+# 插件（GitHub Pages 支持列表）
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 排除不参与构建的文件
+exclude:
+  - README.md
+  - LICENSE
+  - node_modules
+  - package.json
+  - .gitignore
+  - .vscode
+
+# 头部导航菜单
+header_pages:
+  - index.md
+  - about.md
+  - posts.md
+
+# 主题配置（按需更换）
+theme: minima
+
+# 自定义变量，页面内可使用 {{ site.xxx }}
+custom:
+  avatar: "/assets/images.jpg"
+  github: "https://github.com/cdasl"
