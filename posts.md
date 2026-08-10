@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 文章
+title: posts
 permalink: /posts/
 ---
 {% for post in site.posts %}

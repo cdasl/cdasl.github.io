@@ -1,5 +1,5 @@
 ---
 layout: home
-title: 首页
+title: home
 ---
-test
+This is home page.
